@@ -62,7 +62,7 @@ def is_inclement():
     """
     # write your code for this function below this line.
     forecast = input("What's the weather forecast for today? ").lower()
-    if forecast == "rain" or forecast == "snow" or forecast == "sleet":
+    if forecast in ['rain', 'snow', 'sleet']:
         return True
     else:
         return False
